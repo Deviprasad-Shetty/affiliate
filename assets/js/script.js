@@ -30,7 +30,7 @@ function pushToGTM(transactionId) {
             'tax': 7.20,
             'shipping': 5.99,
             'currency': 'USD',
-            'items': [{
+            'items': JSON.stringify([{
                 'item_name': 'Premium Runner Sneakers',
                 'item_id': 'NKE-RN-001',
                 'price': 89.99,
@@ -38,7 +38,7 @@ function pushToGTM(transactionId) {
                 'item_category': 'Footwear',
                 'item_variant': 'Black/White',
                 'quantity': 1
-            }]
+            }])
         }
     });
 }
