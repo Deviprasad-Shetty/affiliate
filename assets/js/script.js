@@ -22,6 +22,7 @@ function pushToGTM(transactionId) {
     window.dataLayer = window.dataLayer || [];
     dataLayer.push({
         'event': 'purchase',
+        'type': 'gtm',
         'transaction_id' : transactionId,
         'ecommerce': {
             'transaction_id': transactionId,
